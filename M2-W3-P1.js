@@ -115,12 +115,18 @@ console.log(firstLetter)
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-function cutString(str){
-    return str.shift("").pop("")
-};
-console.log(cutString("Icho"))
+
+
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function giveMeRandom(n){
+    const randomCollection=[];
+    for(n=0;n<=9;n++){
+        randomCollection.push(Math.floor(Math.random()*10))
+}
+return randomCollection;
+}
+let random =giveMeRandom(5);
+console.log(random)
